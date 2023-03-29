@@ -6,7 +6,7 @@ public class Detector : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             Time.timeScale = 0;
             _gameOverPanel.SetActive(true);
