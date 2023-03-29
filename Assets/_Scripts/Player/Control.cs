@@ -12,7 +12,7 @@ public class Control : MonoBehaviour
             _touch = Input.GetTouch(0);
             if (_touch.phase == TouchPhase.Moved)
             {
-                transform.position = new Vector2(transform.position.x + _touch.deltaPosition.x * _speed, transform.position.y);
+                transform.position = new Vector2(transform.position.x + _touch.deltaPosition.x * _speed, transform.position.y + _touch.deltaPosition.y * _speed);
             }
         }
             
